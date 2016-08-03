@@ -1,0 +1,25 @@
+{
+  "name": "CapstoneProject",
+  "version": "0.1.6",
+  "author": "Divya",
+  "description": "WebRTCFaceVerify",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "easyrtc": "1.0.x",
+    "express": "^4.13.4",
+    "socket.io": "0.9.x",
+    "multer": "^1.1.0",
+    "aws-sdk": "2.x",
+    "ejs": "2.x"
+  },
+  "repository":{
+  "type":"git",
+  "url":"https://git.heroku.com/webrtcfacerecognition.git"
+  },
+  "license": "BSD2",
+  "engines": {
+      "node": ">=0.12.7"
+  }
+}

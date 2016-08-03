@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+        <link rel="icon" href="smallbubble.png" type='image/png' />
+        <title>Conference</title>
+        <link rel="stylesheet" type="text/css" href="demo_audio.css" />
+        <link rel="stylesheet" href="ChattingApp.css" type="text/css" />
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <!-- Assumes global locations for socket.io.js and easyrtc.js -->
+
+        <script src="/socket.io/socket.io.js"></script>
+
+        <script type="text/javascript" src="/easyrtc/easyrtc.js"></script>
+
+        <script src="capture.js"></script>
+    </head>
+    <body onload="connect();">
+        <header><h1><img src="bubble128.png" id="CompanyLogo" alt="Company Logo" >Conference</H1>
+        </header>
+        <div id="main">
+            <center> 
+                <button id="capturebutton" class="btn">Authenticate</button>
+            </center>
+            <!--show--><br><br>
+            <div id="demoContainer">
+                <div id="connectControls">
+                   <center> <div id="iam">Not yet connected...</div></center> 
+                    <div id="otherClients"></div>
+                </div>
+
+                <div id="videos">
+                    <center><video autoplay="autoplay" class="easyrtcMirror" id="selfVideo" muted="muted" volume="0" >
+                    </video></center>		
+                    <div style="position:relative;float:left;">
+                        <video autoplay="autoplay" id="callerVideo"></video>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <canvas id="canvas"></canvas>
+            <br style="clear:both;" />
+            <hr />
+        </div>
+	<div id="loading-div-background">
+    <div id="loading-div" class="ui-corner-all" >
+      <img style="height:80px;margin:30px;" src="balls.gif" alt="Loading.."/>
+      <h2 style="font-weight:normal;font-family:fantasy;" >Authorizing....</h2>
+     </div>
+	</div>
+
+    </body>
+</html>
+</html>

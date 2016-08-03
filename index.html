@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="smallbubble.png" type='image/png' />
+    <title>Conference</title>
+    <link rel="stylesheet" href="ChattingApp.css" type="text/css" />
+<script> 
+function insertToDB()
+{
+	var name = document.getElementById('txtName').value;
+	window.localStorage.setItem('userName',name);
+}
+</script>
+</head>
+
+<body>
+   <header><h1><img src="bubble128.png" id="CompanyLogo" alt="Company Logo" >Conference</H1>
+     
+    </header>
+<div  id ='main'>
+    <br/><br/><br/><br/><br/><br/>
+    <center>
+      <div id='info'> Conference is simple and cost effective secure Online communication site based on 
+      <br>facial recognition which allows to colloborate online with friends, colleagues and coworkers.<br> 
+    	Best of all the participants share their webcams which allows much personal interaction.
+      </div>
+        </center>
+<br><br>
+<br><br>
+    <form id="webrtcForm" name="webrtcForm" action="authentication.html" method="POST" onsubmit="insertToDB()">
+      <center>
+          <input type="text" id ='txtName' name="name" class="field"  size=50 placeholder="Enter name" required/>
+      </center>
+<br><br>
+<center>
+    <input type="submit"  class='btn'  value="Join" />
+</center>
+</form>
+</div>
+</body>
+</html>

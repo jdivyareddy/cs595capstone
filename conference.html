@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="smallbubble.png" type='image/png' />
+    <title>Conference</title>
+    <link rel="stylesheet" href="ChattingApp.css" type="text/css" />
+     <script src="capture.js"></script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+        <script type="text/javascript" src="/easyrtc/easyrtc.js"></script>
+
+        <script src="/socket.io/socket.io.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="demo_room.css" />
+
+        <script type="text/javascript" src="multiparty.js"></script>
+
+    </head>
+<body onload="appInit();" onunload="clearLocalStorage();">
+<header><h1><img src="bubble128.png" id="CompanyLogo" alt="Company Logo" >Conference</H1>
+<br><br>
+<div id="main">
+<div id="fullpage" >
+    <video id="box0" class="transit   easyRTCMirror" muted="muted" height="360" width-="400" >
+    </video>
+	<video id="box1" class="transit  " style="visibility:hidden">
+	</video>
+	<video id="box2" class="transit  " style="visibility:hidden">
+	</video>
+	<video id="box3" class="transit  " style="visibility:hidden">
+	</video>
+
+</div>
+</div>
+</body>
+</html>
